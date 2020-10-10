@@ -1,18 +1,15 @@
 About nbconvert
 ===============
 
-Home: http://jupyter.org
+Home: 
 
-Package license: BSD-3-Clause
+Package license: 
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nbconvert-feedstock/blob/master/LICENSE.txt)
 
-Summary: Converting Jupyter Notebooks
+Summary: 
 
-The nbconvert tool, jupyter nbconvert, converts notebooks to various other
-formats via Jinja templates. The nbconvert tool allows you to convert an
-.ipynb notebook file into various static formats.
-
+nbconvert with only core dependencies with limited output options
 
 Current build status
 ====================
@@ -192,6 +189,8 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-nbconvert-green.svg)](https://anaconda.org/conda-forge/nbconvert) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nbconvert.svg)](https://anaconda.org/conda-forge/nbconvert) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nbconvert.svg)](https://anaconda.org/conda-forge/nbconvert) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nbconvert.svg)](https://anaconda.org/conda-forge/nbconvert) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-nbconvert--core-green.svg)](https://anaconda.org/conda-forge/nbconvert-core) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nbconvert-core.svg)](https://anaconda.org/conda-forge/nbconvert-core) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nbconvert-core.svg)](https://anaconda.org/conda-forge/nbconvert-core) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nbconvert-core.svg)](https://anaconda.org/conda-forge/nbconvert-core) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-nbconvert--webpdf-green.svg)](https://anaconda.org/conda-forge/nbconvert-webpdf) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nbconvert-webpdf.svg)](https://anaconda.org/conda-forge/nbconvert-webpdf) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nbconvert-webpdf.svg)](https://anaconda.org/conda-forge/nbconvert-webpdf) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nbconvert-webpdf.svg)](https://anaconda.org/conda-forge/nbconvert-webpdf) |
 
 Installing nbconvert
 ====================
@@ -202,10 +201,10 @@ Installing `nbconvert` from the `conda-forge` channel can be achieved by adding 
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `nbconvert` can be installed with:
+Once the `conda-forge` channel has been enabled, `nbconvert, nbconvert-core, nbconvert-webpdf` can be installed with:
 
 ```
-conda install nbconvert
+conda install nbconvert nbconvert-core nbconvert-webpdf
 ```
 
 It is possible to list all of the versions of `nbconvert` available on your platform with:
@@ -279,6 +278,7 @@ Feedstock Maintainers
 =====================
 
 * [@blink1073](https://github.com/blink1073/)
+* [@bollwyvl](https://github.com/bollwyvl/)
 * [@jakirkham](https://github.com/jakirkham/)
 * [@minrk](https://github.com/minrk/)
 * [@mpacer](https://github.com/mpacer/)
