@@ -36,7 +36,6 @@ outputs:
 
   - name: nbconvert-core
     build:
-      noarch: python
       script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv
       entry_points:
         - jupyter-nbconvert = nbconvert.nbconvertapp:main
